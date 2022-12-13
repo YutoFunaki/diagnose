@@ -9,7 +9,7 @@ $(function () {
 
 
 
-//選択ボタン値を配列に入れてカウントする関数
+//選択ボタン値を配列に入れてカウント
     var box =[]; // 選択した問題の値を格納
 
   $(".btn").each(function(){
@@ -25,7 +25,7 @@ $(function () {
    const sum = box.reduce(function(sum, element){
     return sum + element;
   }, 0);
-  
+
     // 計算結果sumに応じて回答を出力
     if(0 == sum){
       $('#answer_01').css("display","")
